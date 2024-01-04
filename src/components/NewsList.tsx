@@ -13,11 +13,11 @@ const newsData = [
 
 const NewsList: React.FC = () => {
   return (
-    <div>
+    <div className='news-container'>
       <h2>Новости</h2>
       <div className='news-list'>
         {newsData.map((news, index) => (
-            <LinkedItem key={index} {...news} />
+          <LinkedItem key={index} {...news} />
         ))}
       </div>
     </div>
